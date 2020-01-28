@@ -1,23 +1,29 @@
 //BEGIN-SNIPPET showcase
-import Component from '@ember/component';
+import Component from '@glimmer/component';
+import { tracked } from '@glimmer/tracking';
+import { action } from '@ember/object';
 
-export default Component.extend({
+export default class Showcase extends Component {
 
-  init(){
-    this._super(...arguments);
-    this.set('ibanValue', 'TR625373458726249832302425');
-    this.set('bindMaskedIbanValue', 'TR62 5373 4587 2624 9832 3024 25');
-    this.set('customValue', '1234123443214321');
-  },
+  @tracked ibanValue = 'TR625373458726249832302425';
+  @tracked bindMaskedIbanValue = 'TR62 5373 4587 2624 9832 3024 25';
+  @tracked customValue = '1234123443214321';
+  @tracked enteredAction;
 
-  actions: {
-
-    updatedIbanVal(ibanValue){
-      this.set('enteredAction', true);
-      this.set("ibanValue", ibanValue);
-    }
-
+  @action
+  updateIbanValue(ibanValue){
+    this.enteredAction = true;
+    this.ibanValue = ibanValue;
   }
 
-});
+  @action
+  updateBindMaskedIbanValue(bindMaskedIbanValue){
+    this.bindMaskedIbanValue = bindMaskedIbanValue;
+  }
+
+  @action
+  updateCustomValue(customValue){
+    this.customValue = customValue;
+  }
+}
 //END-SNIPPET
