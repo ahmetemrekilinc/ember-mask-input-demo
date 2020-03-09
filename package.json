@@ -1,6 +1,6 @@
 {
   "name": "ember-mask-input-demo",
-  "version": "5.0.0",
+  "version": "5.0.1",
   "private": true,
   "description": "Demo app for ember-mask-input addon",
   "repository": "",
@@ -41,7 +41,7 @@
     "ember-code-snippet": "3.0.0",
     "ember-export-application-global": "2.0.1",
     "ember-load-initializers": "2.1.1",
-    "ember-mask-input": "5.0.0",
+    "ember-mask-input": "5.0.1",
     "ember-maybe-import-regenerator": "0.1.6",
     "ember-prism": "0.5.0",
     "ember-qunit": "4.6.0",
