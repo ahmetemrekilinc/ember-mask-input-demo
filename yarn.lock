@@ -5417,10 +5417,10 @@ ember-load-initializers@2.1.1:
     ember-cli-babel "^7.11.0"
     ember-cli-typescript "^2.0.2"
 
-ember-mask-input@5.0.1:
-  version "5.0.1"
-  resolved "https://registry.yarnpkg.com/ember-mask-input/-/ember-mask-input-5.0.1.tgz#5c856b039734ead601ba2e8ac2b743f90996fb95"
-  integrity sha512-nWXFu06QRNW9tEFhU9+GHClxEQJejokZv53MtGr6iM2UC+c4GomdbGAQyv1xpRigCu7huHrGfF7g88FISTmWOA==
+ember-mask-input@5.0.2:
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/ember-mask-input/-/ember-mask-input-5.0.2.tgz#d16ce9d1758d4653dee6f9bc6293b385342c1940"
+  integrity sha512-ZHZhM+KHzeKjoEJzc7GI7M2tg/9+bY7imAc75RJCVsx5qBLR9Clti59PtSdjkkUHJhFGn4RN9twh93+kieRrsA==
   dependencies:
     "@ember/jquery" "1.1.0"
     ember-cli-babel "7.17.2"
